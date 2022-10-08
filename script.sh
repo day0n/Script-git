@@ -8,7 +8,7 @@ function rand(){
 
 times=$(rand 1 10)
 
-for((integer = 1; integer <= {$times}; integer++))
+for((integer = 1; integer <= ${times}; integer++))
 do
     echo 'dddd'>>README.md
 done
