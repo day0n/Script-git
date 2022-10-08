@@ -10,7 +10,7 @@ times=$(rand 1 10)
 
 for((integer = 1; integer <= times; integer++))
 do
-    echo $times>>README.md
+    echo 'dddd'>>README.md
 done
 
 git add README.md
