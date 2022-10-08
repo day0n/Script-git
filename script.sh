@@ -1,14 +1,10 @@
 #!/bin/zsh
-function rand(){
-    min=$1
-    max=$(($2-$min+1))
-    num=$(date +%s%N)
-    echo $(($num%$max+$min))
-}
+declare -i number=$RANDOM+1000000000
+declare -i max=7-3+1;
+times=$(($number%$max+3));
+echo $times
 
-times=$(rand 1 10)
-
-for((integer = 1; integer <= 2; integer++))
+for((integer = 1; integer <= $times; integer++))
 do
     echo 'hello niu'>>README.md
     git add README.md
